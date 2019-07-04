@@ -5,7 +5,9 @@
   "description": "A minimal FTP client built on Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "Electron",
@@ -35,6 +37,8 @@
     "jsftp": "^1.5.5",
     "jsftp-rmr": "0.0.1",
     "ng-draggable": "^1.0.0",
-    "universal-analytics": "^0.4.8"
-  }
+    "universal-analytics": "^0.4.8",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
